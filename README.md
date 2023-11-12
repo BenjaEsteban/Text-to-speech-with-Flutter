@@ -123,7 +123,7 @@ Widget build(BuildContext context) {
 - Dentro del archivo main se define el widget `TextToSpeech` que contiene la lógica para la conversión de texto a voz.
 
 
-### Patron arquitectonico
+### Patrón arquitectónico
 El modelo usado en la aplicación es el Modelo Vista Controlador, en donde: 
 
 - Modelo:
