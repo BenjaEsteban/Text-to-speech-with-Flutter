@@ -12,22 +12,22 @@
 La aplicación está diseñada para ayudar a los usuarios a practicar y mejorar su pronunciación en inglés. Los usuarios podrán ingresar palabras o frases en la aplicación y escuchar cómo se pronuncian correctamente. Para hacer esto posible en Flutter, se ha integrado la funcionalidad de `Text to Speech (TTS)`, que permite la síntesis de voz y la reproducción de las palabras o frases ingresadas.
 
 ## Diseño
-**Logo e Ilustración:**
+- **Logo e Ilustración:**
 Se ha incluido un contenedor principal que contiene dos sub-contenedores.
-**Logo:**
+- **Logo:**
 Un contenedor separado para el logo con un margen superior de 20 para centrarlo verticalmente.
-**Ilustración:** 
+- **Ilustración:** 
 La ilustración también se encuentra dentro del mismo contenedor principal.
-**Campo de Texto para Ingreso:**
+- **Campo de Texto para Ingreso:**
 Un contenedor separado que ocupa el 80% del ancho total de la pantalla.
 Incluye un campo de texto con un padding uniforme de 8.
-**Botón de Escuchar:**
+- **Botón de Escuchar:**
 Un contenedor que alberga un botón elevado para activar la síntesis de voz.
 El botón tiene un ancho fijo de 100 y una altura fija de 50.
 Se ha aplicado un estilo personalizado para el color de fondo y las esquinas redondeadas.
-**Spacer:**
+- **Spacer:**
 Se ha agregado un spacer para ocupar cualquier espacio restante en la columna y proporcionar un espacio vertical flexible.
-**Maqueta:**
+- **Maqueta:**
 ![Imagen diseño](https://github.com/BenjaEsteban/Text-to-speech-with-Flutter/blob/main/assets/design.png)
 
 ## Implemenación
