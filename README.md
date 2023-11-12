@@ -1,16 +1,46 @@
-# app
+# Aplicación de Texto a Voz en Flutter
 
-A new Flutter project.
+Esta es una aplicación de ejemplo en Flutter que utiliza la biblioteca `flutter_tts` para permitir la conversión de texto a voz. La aplicación presenta una interfaz simple que incluye la entrada de texto, imágenes y un botón para activar la función de texto a voz.
 
-## Getting Started
+## Estructura del Proyecto
 
-This project is a starting point for a Flutter application.
+- `main.dart`: Archivo principal que inicia la aplicación y define el widget principal `MyApp`.
 
-A few resources to get you started if this is your first Flutter project:
+- `my_app.dart`: Define el widget principal `MyApp` que crea la interfaz de usuario.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- `text_to_speech.dart`: Define el widget `TextToSpeech` que contiene la lógica para la conversión de texto a voz.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Dependencias
+
+- `flutter/material.dart`: Biblioteca de Flutter para el desarrollo de interfaces de usuario.
+
+- `flutter_tts/flutter_tts.dart`: Biblioteca que proporciona funciones para la síntesis de voz.
+
+## Ejecución de la Aplicación
+
+Para ejecutar la aplicación, asegúrate de tener Flutter y Dart instalados en tu máquina. Luego, ejecuta el siguiente comando en el directorio del proyecto:
+
+```bash
+flutter run
+```
+
+# Funcionalidades
+
+## Conversión de Texto a Voz
+Ingresa el texto deseado en el campo de entrada y presiona el botón "Escuchar" para activar la síntesis de voz.
+
+## Interfaz Amigable
+La interfaz incluye imágenes y un diseño simple para una experiencia de usuario mejorada.
+
+# Personalización
+
+Puedes personalizar la aplicación ajustando los siguientes elementos:
+
+- **Cambiar el Idioma de la Síntesis de Voz:**
+  Modifica la línea `await _flutterTts.setLanguage("en-EN");` en la función `speak` de `TextToSpeech`.
+
+- **Cambiar la Apariencia del Botón:**
+  Modifica las propiedades `color` y `shape` en el contenedor del botón.
+
+- **Personalizar la Interfaz:**
+  Añade o modifica elementos en el widget `MyApp` para adaptar la interfaz a tus necesidades específicas.
