@@ -59,7 +59,8 @@ class TextToSpeech extends StatelessWidget {
               ],
             ),
           ),
-          Padding(
+          Container(
+            width: MediaQuery.of(context).size.width * 0.8,
             padding: const EdgeInsets.all(8.0),
             child: TextField(
               controller: _textEditingController,
