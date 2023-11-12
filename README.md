@@ -2,6 +2,8 @@
 
 Esta es una aplicación de ejemplo en Flutter que utiliza la biblioteca `flutter_tts` para permitir la conversión de texto a voz. La aplicación presenta una interfaz simple que incluye la entrada de texto, imágenes y un botón para activar la función de texto a voz.
 
+![Imagen de la aplicación](https://github.com/BenjaEsteban/Text-to-speech-with-Flutter/blob/main/assets/prototipo.png)
+
 ## Estructura del Proyecto
 
 - `main.dart`: Archivo principal que inicia la aplicación y define el widget principal `MyApp`.
