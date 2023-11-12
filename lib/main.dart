@@ -42,39 +42,30 @@ class TextToSpeech extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset(
-                  'assets/logo.png',
-                  width: 400,
-                  height: 100,
+                Container(
+                  // ignore: prefer_const_constructors
+                  margin: EdgeInsets.only(top: 20.0),
+                  child: Image.asset(
+                    'assets/logo.png',
+                    width: 400,
+                    height: 120,
+                  ),
                 ),
                 Image.asset(
                   'assets/ilustracion.png',
-                  width: 250,
-                  height: 250,
+                  width: 280,
+                  height: 280,
                 ),
-                // ignore: prefer_const_constructors
-                // Text(
-                //   "''Habla con precisión, aprende con facilidad''",
-                //   // ignore: prefer_const_constructors
-                //   style: TextStyle(
-                //     fontWeight: FontWeight.bold,
-                //     color: const Color.fromARGB(255, 102, 44, 112),
-                //     fontFamily: 'Schyler',
-                //   ),
-                // ),
               ],
             ),
           ),
-
-          // ignore: prefer_const_constructors
-          Spacer(),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TextField(
               controller: _textEditingController,
               // ignore: prefer_const_constructors
               decoration: InputDecoration(
-                hintText: 'Ingresa el texto a escuchar', // Placeholder
+                hintText: 'Ingresa el texto a escuchar',
               ),
             ),
           ),
@@ -93,8 +84,7 @@ class TextToSpeech extends StatelessWidget {
                   // ignore: deprecated_member_use
                   primary: const Color.fromRGBO(137, 18, 50, 1),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(
-                        10.0), // Ajusta el valor según sea necesario
+                    borderRadius: BorderRadius.circular(10.0),
                   ),
                 ),
                 // ignore: prefer_const_constructors
