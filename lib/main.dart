@@ -33,7 +33,8 @@ class TextToSpeech extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
+        body: SafeArea(
+      child: Center(
           child: Column(
         children: [
           // ignore: prefer_const_constructors, avoid_unnecessary_containers
@@ -66,7 +67,7 @@ class TextToSpeech extends StatelessWidget {
               controller: _textEditingController,
               // ignore: prefer_const_constructors
               decoration: InputDecoration(
-                hintText: 'Ingresa el texto a escuchar',
+                hintText: 'Ingresa el texto aquí',
               ),
             ),
           ),
@@ -95,6 +96,6 @@ class TextToSpeech extends StatelessWidget {
           Spacer(),
         ],
       )),
-    );
+    ));
   }
 }
