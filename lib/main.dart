@@ -71,13 +71,10 @@ class TextToSpeech extends StatelessWidget {
               ),
             ),
           ),
+          // ignore: sized_box_for_whitespace
           Container(
             width: 100,
             height: 50,
-            decoration: BoxDecoration(
-              color: const Color.fromRGBO(228, 167, 175, 1),
-              borderRadius: BorderRadius.circular(10.0),
-            ),
             child: ElevatedButton(
                 onPressed: () {
                   speak(_textEditingController.text);
