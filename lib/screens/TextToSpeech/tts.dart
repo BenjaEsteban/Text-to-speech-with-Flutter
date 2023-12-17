@@ -130,7 +130,7 @@ class _TTSPageState extends State<TTSPage> {
   void _showEmptyTextFieldSnackbar() {
     const snackBar = SnackBar(
       content: Text('El campo de texto está vacío'),
-      backgroundColor: Colors.red,
+      backgroundColor: Color(0xFF891232),
     );
 
     ScaffoldMessenger.of(context).showSnackBar(snackBar);

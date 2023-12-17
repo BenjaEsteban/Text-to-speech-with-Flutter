@@ -6,8 +6,8 @@ class BottomBar extends StatelessWidget {
   final Function(double) onSpeedChanged;
   final double speechRate;
 
-  // ignore: prefer_const_constructors_in_immutables, use_key_in_widget_constructors
-  BottomBar({
+  const BottomBar({
+    super.key,
     required this.onPlayPressed,
     required this.onStopPressed,
     required this.onSpeedChanged,
@@ -21,15 +21,13 @@ class BottomBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           IconButton(
-            // ignore: prefer_const_constructors
-            icon: Icon(Icons.play_arrow),
+            icon: const Icon(Icons.play_arrow),
             onPressed: () {
               onPlayPressed();
             },
           ),
           IconButton(
-            // ignore: prefer_const_constructors
-            icon: Icon(Icons.stop),
+            icon: const Icon(Icons.stop),
             onPressed: () {
               onStopPressed();
             },
